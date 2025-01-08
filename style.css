@@ -1,0 +1,209 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background: rgba(0, 0, 0, 0.1); */
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Background Video Styling */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Content Styling */
+.content {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+
+/* Heading Section */
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+
+  background: rgba(100, 29, 241, 0.1);
+}
+
+.nav .logo img {
+  max-height: 50px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Intro Section Styling */
+
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 60px 10%; */
+}
+
+.intro-container .left {
+  /* background: rgba(0, 0, 0, 0.1); */
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Styling for images */
+
+.left img {
+  width: 150px;
+  /* padding-left: 30px; */
+  position: absolute;
+  animation: floatAndRotate 5s infinite ease-in-out;
+}
+
+/* Hover Interaction */
+.left img:hover {
+  transform: scale(1.8) rotate(0deg);
+  filter: drop-shadow(0 0 20px #ffffff);
+  z-index: 5;
+}
+
+/* Floating and Rotating Animation */
+@keyframes floatAndRotate {
+  0% {
+    transform: translateY(0) scale(1.1);
+  }
+  25% {
+    transform: translateY(-20px) scale(1.5);
+  }
+  50% {
+    transform: translateY(0) scale(2);
+  }
+  75% {
+    transform: translateY(20px) scale(1.5);
+  }
+  100% {
+    transform: translateY(0) scale(1.1);
+  }
+}
+
+.intro-container .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad-container {
+  /* background: rgba(0, 0, 0, 0.1); */
+  padding: 10%;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+}
+
+.ad-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: cursive;
+  color: #f2d998;
+  margin: 10px 0;
+}
+
+.ad-quote {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.ad-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #ffd700;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+/* birthday gift section styling  */
+.gift-container {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+
+.gift-container .gift-left {
+  width: 50%;
+}
+
+.gift-container .gift-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.gift-container .gift-right {
+  width: 50%;
+  background-color: rgba(159, 74, 238, 0.501);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.gift-container .gift-right h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: cursive;
+}
+
+.gift-container .gift-right p {
+  font-size: 1.5rem;
+  /* text-align: center; */
+  padding: 10px 1.5rem;
+}
